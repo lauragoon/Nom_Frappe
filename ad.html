@@ -28,6 +28,23 @@
 			left: -30px;
 			position: relative;
 			top: -40px;
+			z-index: 2;
+		}
+
+		@keyframes spin {
+			from {transform: rotate(0deg);}
+			to {transform: rotate(360deg);}
+		}
+
+		#shine {
+			animation-duration: 20s;
+			animation-iteration-count: infinite;
+			animation-name: spin;			
+			animation-timing-function: linear;
+			left: 35px;
+			position: relative;
+			top: -445px;
+			z-index: 1;
 		}
 
 		</style>
@@ -37,6 +54,7 @@
 
 		<h1>Nom Frappe</h1>
 		<img src="starbucks.png" id="frappe" />
+		<img src="shine.png" id="shine" />
 
 	</body>
 
