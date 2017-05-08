@@ -8,9 +8,14 @@
 		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 		<style type="text/css">
 
+		html {
+			background-color: white;
+		}
+
 		body {
-			background-color: lightgreen;
-			box-shadow: 2px 2px 5px black;
+			background: url("http://www.tokkoro.com/picsup/437425-starbucks-free-backgrounds-desktop.jpg");
+			background-position: 48.7%;
+			box-shadow: 3px 3px 10px black;
 			color: white;
 			font-family: 'Press Start 2P', cursive;
 			height: 540px;
@@ -18,17 +23,31 @@
 			margin-top: 20px;
 			padding: 30px;
 			width: 540px;
+			z-index: 1;
 		}
 
 		h1 {
 			margin: 0px auto; 
 		}
 
-		#frappe {
+		@keyframes frappe {
+			from {transform: translateY(0px);}
+			to {transform: translateY(50px);}
+		}
+
+		#drink {
+			animation-direction: alternate;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+			animation-name: frappe;			
+			animation-timing-function: ease-in-out;
+		}
+
+		#frappe {			
 			left: -30px;
 			position: relative;
-			top: -40px;
-			z-index: 2;
+			top: -10px;
+			z-index: 3;
 		}
 
 		@keyframes spin {
@@ -43,8 +62,27 @@
 			animation-timing-function: linear;
 			left: 35px;
 			position: relative;
-			top: -445px;
-			z-index: 1;
+			top: -415px;
+			z-index: 2;
+		}
+
+		@keyframes crowd {
+			from {background-image: url(crowd_1.png);}
+			to {background-image: url(crowd_2.png);}
+		}
+
+		#crowd {
+			animation-direction: alternate;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+			animation-name: crowd;			
+			animation-timing-function: ease-in-out;
+			height: 171px;
+			width: 600px;
+			left: -30px;
+			position: relative;
+			top: -502px;
+			z-index: 4;
 		}
 
 		</style>
@@ -53,8 +91,11 @@
 	<body>
 
 		<h1>Nom Frappe</h1>
-		<img src="starbucks.png" id="frappe" />
-		<img src="shine.png" id="shine" />
+		<div id="drink">
+			<img src="starbucks.png" id="frappe" />
+			<img src="shine.png" id="shine" />
+		</div>
+		<div id="crowd"></div>
 
 	</body>
 
