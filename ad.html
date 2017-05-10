@@ -8,13 +8,29 @@
 		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 		<style type="text/css">
 
+		@keyframes frappe {
+			from {transform: translateY(0px);}
+			to {transform: translateY(50px);}
+		}
+
+		@keyframes spin {
+			from {transform: rotate(0deg);}
+			to {transform: rotate(360deg);}
+		}
+
+		@keyframes crowd {
+			from {background-image: url(crowd_1.png);}
+			to {background-image: url(crowd_2.png);}
+		}
+
 		html {
-			background-color: white;
+			background-color: #062e1f;
 		}
 
 		body {
 			background: url("background.jpg");
-			background-position: 48.7%;
+			background-position: 48.7% 55%;
+			border: solid 1px black;
 			box-shadow: 3px 3px 10px black;
 			color: white;
 			font-family: 'Press Start 2P', cursive;
@@ -27,13 +43,22 @@
 		}
 
 		h1 {
+			font-size: 50px;
 			margin: 0px auto; 
+			margin-top: 10px;
+			text-align: center;
+			text-shadow: 5px 5px 10px black;
 		}
 
-		@keyframes frappe {
-			from {transform: translateY(0px);}
-			to {transform: translateY(50px);}
-		}
+		p {
+			font-size: 9px;
+			line-height: 20px;
+			position: relative;
+			text-align: center;
+			text-shadow: 5px 5px 10px black;
+			top: -520px;
+			z-index: 5;
+		}		
 
 		#drink {
 			animation-direction: alternate;
@@ -46,15 +71,10 @@
 		#frappe {			
 			left: -30px;
 			position: relative;
-			top: -10px;
+			top: -60px;
 			z-index: 3;
 		}
-
-		@keyframes spin {
-			from {transform: rotate(0deg);}
-			to {transform: rotate(360deg);}
-		}
-
+		
 		#shine {
 			animation-duration: 20s;
 			animation-iteration-count: infinite;
@@ -62,14 +82,9 @@
 			animation-timing-function: linear;
 			left: 35px;
 			position: relative;
-			top: -415px;
+			top: -465px;
 			z-index: 2;
-		}
-
-		@keyframes crowd {
-			from {background-image: url(crowd_1.png);}
-			to {background-image: url(crowd_2.png);}
-		}
+		}		
 
 		#crowd {
 			animation-direction: alternate;
@@ -81,7 +96,7 @@
 			width: 600px;
 			left: -30px;
 			position: relative;
-			top: -502px;
+			top: -609px;
 			z-index: 4;
 		}
 
@@ -92,9 +107,12 @@
 
 		<h1>Nom Frappe</h1>
 		<div id="drink">
-			<img src="starbucks.png" id="frappe" />
+			<img src="starbucks3.gif" id="frappe" />
 			<img src="shine.png" id="shine" />
 		</div>
+		<p>
+			Based off of the popular Messenger game Nom Cat, we present to you Nom Frappe! Help feed Stuy kids an endless amount of Unicorn Frappucino by pressing A and D!
+		</p>
 		<div id="crowd"></div>
 
 	</body>
