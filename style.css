@@ -1,0 +1,77 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    height: 600px;
+    width: 800px;
+    background-image: url(stuyBridge.jpg);
+    margin: 0px auto;
+    overflow: hidden;
+/*    position: relative;*/
+/*    border: black solid 1px;*/
+}
+
+/* PLAY BUTTON */
+.btn {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+	border: none;
+	background: none;
+	cursor: pointer;
+	padding: 20px 65px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+    left: 250px;
+    top: 430px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.btn:before {
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+}
+.btn-2 {
+	background: #cb4e4e;
+	color: #fff;
+	box-shadow: 0 6px #ab3c3c;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+.btn-2h {
+	border-radius: 20px;
+}
+
+.btn-2h:hover {
+	box-shadow: 0 4px #ab3c3c;
+	top: 432px;
+}
+
+.btn-2h:active {
+	box-shadow: 0 0 #ab3c3c;
+	top: 436px;
+}
+/* ----- END PLAY BUTTON ----- /
