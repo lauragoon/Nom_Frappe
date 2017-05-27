@@ -6,7 +6,7 @@ body {
 #container {
     height: 600px;
     width: 800px;
-    background-image: url(stuyBridge.jpg);
+    background-image: url(images/stuyBridge.jpg);
     margin: 0px auto;
     overflow: hidden;
 /*    position: relative;*/
