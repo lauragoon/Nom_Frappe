@@ -1,3 +1,5 @@
+/*@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Quicksand');*/
+
 body {
     padding: 0;
     margin: 0;
@@ -6,21 +8,33 @@ body {
 #container {
     height: 600px;
     width: 800px;
-    background-image: url(images/stuyBridge.jpg);
+    background-image: url(stuyBridge.jpg);
     margin: 0px auto;
     overflow: hidden;
 /*    position: relative;*/
 /*    border: black solid 1px;*/
 }
 
+/* TITLE GAME */
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 60px;
+    position: relative;
+    left: 100px;
+    top: 180px;
+    text-shadow: 4px 3px 0px rgba(0,0,0,0.0), 9px 8px 0px #00e6e6;
+}
+/* END TITLE GAME */
+
 /* PLAY BUTTON */
 .btn {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 30px;
+    font-family: 'VT323', cursive;
+    font-size: 50px;
 	border: none;
 	background: none;
 	cursor: pointer;
-	padding: 20px 65px;
+	padding: 10px 55px;
 	display: inline-block;
 	margin: 15px 30px;
 	text-transform: uppercase;
@@ -28,8 +42,8 @@ body {
 	font-weight: 700;
 	outline: none;
 	position: relative;
-    left: 250px;
-    top: 430px;
+    left: 230px;
+    top: 330px;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
@@ -62,16 +76,16 @@ body {
 	transition: none;
 }
 .btn-2h {
-	border-radius: 20px;
+/*	border-radius: 20px;*/
 }
 
 .btn-2h:hover {
 	box-shadow: 0 4px #ab3c3c;
-	top: 432px;
+	top: 332px; /* +2 */
 }
 
 .btn-2h:active {
 	box-shadow: 0 0 #ab3c3c;
-	top: 436px;
+	top: 336px; /* +6 */
 }
 /* ----- END PLAY BUTTON ----- /
