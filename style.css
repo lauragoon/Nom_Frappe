@@ -15,6 +15,11 @@ body {
 /*    border: black solid 1px;*/
 }
 
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 /* TITLE GAME */
 h1 {
     font-family: 'Press Start 2P', cursive;
@@ -90,7 +95,7 @@ h1 {
 }
 /* ----- END PLAY BUTTON ----- /
 
-/* RULES GAME TITLE */
+/* RULES */
 h2 {
     font-family: 'Press Start 2P', cursive;
     color: white;
@@ -102,18 +107,19 @@ h2 {
     width: 400px;
     padding: 5px;
 }
-/* ----- END RULES GAME TITLE */
-
-/* RULES */ 
+h2:hover {
+    color: beige;
+}
 ol#rules {
     font-family: 'VT323', cursive;
     color: white;
-    font-size: 50px;
+    font-size: 30px;
     position: relative;
     left: 130px;
-    top: 100px;
+    top: 80px;
     background-color: black; /* FIX THE BOX LATER */
     padding: 5px;
     width: 500px;
+    list-style-position: inside;
 }
 /* ----- END RULES ----- */
