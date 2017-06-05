@@ -30,6 +30,9 @@ h1 {
     top: 180px;
     text-shadow: 4px 3px 0px rgba(0,0,0,0.0), 9px 8px 0px #00e6e6;
 }
+a#main_title:hover {
+    color: beige;
+}
 /* END TITLE GAME */
 
 /* PLAY BUTTON */
@@ -123,3 +126,66 @@ ol#rules {
     list-style-position: inside;
 }
 /* ----- END RULES ----- */
+
+/* GAME */
+@font-face {
+    font-family: 'font';
+    src: url('assets/fonts/font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'haibao';
+    src: url('assets/fonts/haibao.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'hanwanhei';
+    src: url('assets/fonts/hanwanhei.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'yasashisa';
+    src: url('assets/fonts/yasashisa.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'bmjua';
+    src: url('assets/fonts/bmjua.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'pressstart';
+    src: url('assets/fonts/pressstart.ttf') format('truetype');
+}
+body {
+    background: url("assets/html/bg.png");
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -ms-touch-action: none;
+    touch-action: none;
+    overflow: hidden;
+}
+
+canvas {
+    margin: 0 auto;
+    display: block;
+    outline: none;
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: optimize-contrast;
+    image-rendering: -webkit-optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: pixelated;
+}
+
+.fontpreloader {
+    font-family: 'font';
+    font-size: 0;
+    opacity: 0.0;
+    height: 0;
+}
+/* end game */
