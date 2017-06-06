@@ -30,6 +30,9 @@ h1 {
     top: 180px;
     text-shadow: 4px 3px 0px rgba(0,0,0,0.0), 9px 8px 0px #00e6e6;
 }
+a#index_title:hover {
+    color: beige;
+}
 /* END TITLE GAME */
 
 /* PLAY BUTTON */
