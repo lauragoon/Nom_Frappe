@@ -1,23 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+	<meta charset="utf-8">
+	<head>
+	    <title>Nom Frappe</title>
+	    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|VT323" rel="stylesheet">
+	    <link rel="stylesheet" type="text/css" href="style.css">
+	    <script type="text/javascript" src="script.js"></script>
+	</head>
+	<body onload="initialize()">
 
-<head>
-    <title>Nom Frappe</title>
-<!--    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Quicksand" rel="stylesheet">-->
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|VT323" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
-</head>
+	    <div id="container">
 
-<body>
-    <div type="1" id="container">
-        <h1>No<a id=
-"index_title" href="https://www.miniclip.com/games/nom-cat/en/">m</a> Frappe</h1>
-        
-<!--        <button id="startPlay" type="button" onClick="setupGame()">Play</button>-->
-        <button class="btn btn-2 btn-2h" onclick="window.location.href='rules.html'">RULES</button>
-        <button class="btn btn-2 btn-2h" onclick="window.location.href='game.html'">PLAY</button>
-    </div>
-</body>
+	        <h1 id="title">
+	        	No<a id="indexTitle" href="https://www.miniclip.com/games/nom-cat/en/" target="_blank">m</a> Frappe
+	        </h1>
+	        
+	        <button id="playButton" class="buttonControl" onclick="play()">PLAY</button>
+	        <button id="ruleButton" class="buttonControl" onclick="rule()" style="left: 730px;">RULES</button>
 
+	        <ol id="rules">
+
+                <li>Help satisfy the students' hunger by simply holding down the A and D keys to open the mouth of the left and right cat, resp. to feed them endless amounts of the famous Unicorn Frappuccino.</li>
+
+                <br>
+
+                <li>But wait! There's a catch. What don't Stuy kids like? Nasty cafeteria food is what! 
+                Beware and do not let the students eat the moldy cafeteria pizza or it's game over.</li>
+
+            </ol>
+
+            <div id="char_1"></div>
+            <div id="char_2"></div>
+
+            <div id="drink_1"></div>
+            <div id="drink_2"></div>
+
+            <div id="pizza_1"></div>
+            <div id="pizza_2"></div>
+
+            <div id="star"></div>
+
+            <div id="score">Score: 0</div>
+            <div id="lives">Lives: 1</div>
+
+	    </div> <!--End of Container-->
+
+	</body>
 </html>
